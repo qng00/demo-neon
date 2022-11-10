@@ -1,0 +1,313 @@
+.font {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    cursor: pointer;
+    color: var(--text-color);
+    max-width: 100px;
+    max-height: 40px;
+
+    &.active {
+        color: #C23564;
+        text-shadow: #C23564 0px 0px 30px;
+    }
+}
+
+@font-face {
+    font-family: 'Hamilton';
+    src: url('../fonts/Hamilton.ttf');
+}
+@font-face {
+    font-family: 'Alexa';
+    src: url('../fonts/Alexa.ttf');
+}
+@font-face {
+    font-family: 'Bayview';
+    src: url('../fonts/Bayview.ttf');
+}
+@font-face {
+    font-family: 'Amsterdam';
+    src: url('../fonts/Amsterdam.ttf');
+}
+@font-face {
+    font-family: 'Greenworld';
+    src: url('../fonts/Greenworld.ttf');
+}
+@font-face {
+    font-family: 'NewCursive';
+    src: url('../fonts/NewCursive.ttf');
+}
+@font-face {
+    font-family: 'Barcelona';
+    src: url('../fonts/Barcelona.ttf');
+}
+@font-face {
+    font-family: 'Vintage';
+    src: url('../fonts/Vintage.ttf');
+}
+@font-face {
+    font-family: 'Amanda';
+    src: url('../fonts/Amanda.ttf');
+}
+@font-face {
+    font-family: 'Freespirit';
+    src: url('../fonts/Freespirit.ttf');
+}
+@font-face {
+    font-family: 'Chelsea';
+    src: url('../fonts/Chelsea.ttf');
+}
+@font-face {
+    font-family: 'Signature';
+    src: url('../fonts/Signature.ttf');
+}
+@font-face {
+    font-family: 'Austin';
+    src: url('../fonts/Austin.ttf');
+}
+@font-face {
+    font-family: 'NeonScript';
+    src: url('../fonts/Neonscript.ttf');
+}
+@font-face {
+    font-family: 'Freehand';
+    src: url('../fonts/Freehand.ttf');
+}
+@font-face {
+    font-family: 'LoveNote';
+    src: url('../fonts/LoveNote.ttf');
+}
+@font-face {
+    font-family: 'Northshore';
+    src: url('../fonts/Northshore.ttf');
+}
+@font-face {
+    font-family: 'Beachfront';
+    src: url('../fonts/Beachfront.ttf');
+}
+@font-face {
+    font-family: 'Royalty';
+    src: url('../fonts/Royalty.ttf');
+}
+@font-face {
+    font-family: 'Rocket';
+    src: url('../fonts/Rocket.ttf');
+}
+@font-face {
+    font-family: 'WildScript';
+    src: url('../fonts/WildScript.ttf');
+}
+@font-face {
+    font-family: 'Avante';
+    src: url('../fonts/Avante.ttf');
+}
+@font-face {
+    font-family: 'Monaco';
+    src: url('../fonts/Monaco.ttf');
+}
+@font-face {
+    font-family: 'Waikiki';
+    src: url('../fonts/Waikiki.ttf');
+}
+@font-face {
+    font-family: 'ClassicType';
+    src: url('../fonts/ClassicType.ttf');
+}
+@font-face {
+    font-family: 'Typewriter';
+    src: url('../fonts/Typewriter.ttf');
+}
+@font-face {
+    font-family: 'Buttercup';
+    src: url('../fonts/Buttercup.ttf');
+}
+@font-face {
+    font-family: 'Melbourne';
+    src: url('../fonts/Melbourne.ttf');
+}
+@font-face {
+    font-family: 'NeoTokyo';
+    src: url('../fonts/NeoTokyo.ttf');
+}
+@font-face {
+    font-family: 'LoveNeon';
+    src: url('../fonts/LoveNeon.ttf');
+}
+@font-face {
+    font-family: 'Marquee';
+    src: url('../fonts/Marquee.ttf');
+}
+@font-face {
+    font-family: 'Mayfair';
+    src: url('../fonts/Mayfair.ttf');
+}
+@font-face {
+    font-family: 'NeonGlow';
+    src: url('../fonts/NeonGlow.ttf');
+}
+@font-face {
+    font-family: 'NeonLite';
+    src: url('../fonts/NeonLite.ttf');
+}
+@font-face {
+    font-family: 'Neontrace';
+    src: url('../fonts/Neontrace.ttf');
+}
+@font-face {
+    font-family: 'Nevada';
+    src: url('../fonts/Nevada.ttf');
+}
+@font-face {
+    font-family: 'SciFi';
+    src: url('../fonts/SciFi.ttf');
+}
+
+.alexa {
+    font-family: 'Alexa';
+    font-size: 180%;
+}
+.hamilton {
+    font-family: 'Hamilton';
+    font-size: 190%;
+}
+.Bayview {
+    font-family: 'Bayview';
+    font-size: 200%;
+}
+.Amsterdam {
+    font-family: 'Amsterdam';
+    font-size: 180%;
+}
+.Greenworld {
+    font-family: 'Greenworld';
+    font-size: 190%;
+}
+.NewCursive {
+    font-family: 'NewCursive';
+    font-size: 190%;
+}
+.Barcelona {
+    font-family: 'Barcelona';
+    font-size: 150%;
+}
+.Vintage {
+    font-family: 'Vintage';
+    font-size: 170%;
+}
+.Amanda {
+    font-family: 'Amanda';
+    font-size: 180%;
+}
+.Freespirit {
+    font-family: 'Freespirit';
+    font-size: 110%;
+}
+.Chelsea {
+    font-family: 'Chelsea';
+    font-size: 240%;
+}
+.Signature {
+    font-family: 'Signature';
+    font-size: 200%;
+}
+.Austin {
+    font-family: 'Austin';
+    font-size: 250%;
+}
+.NeonScript {
+    font-family: 'NeonScript';
+    font-size: 180%;
+}
+.Freehand {
+    font-family: 'Freehand';
+    font-size: 190%;
+}
+.LoveNote {
+    font-family: 'LoveNote';
+    font-size: 170%;
+}
+.Northshore {
+    font-family: 'Northshore';
+    font-size: 190%;
+}
+.Beachfront {
+    font-family: 'Beachfront';
+    font-size: 140%;
+}
+.Royalty {
+    font-family: 'Royalty';
+    font-size: 170%;
+}
+.Rocket {
+    font-family: 'Rocket';
+    font-size: 130%;
+}
+.WildScript {
+    font-family: 'WildScript';
+    font-size: 190%;
+}
+.Avante {
+    font-family: 'Avante';
+    font-size: 150%;
+}
+.Monaco {
+    font-family: 'Monaco';
+    font-size: 140%;
+}
+.Waikiki {
+    font-family: 'Waikiki';
+    font-size: 140%;
+}
+.ClassicType {
+    font-family: 'ClassicType';
+    font-size: 130%;
+}
+.Typewriter {
+    font-family: 'Typewriter';
+    font-size: 140%;
+}
+.Buttercup {
+    font-family: 'Buttercup';
+    font-size: 240%;
+}
+.Melbourne {
+    font-family: 'Melbourne';
+    font-size: 150%;
+}
+.NeoTokyo {
+    font-family: 'NeoTokyo';
+    font-size: 150%;
+}
+.LoveNeon {
+    font-family: 'LoveNeon';
+    font-size: 120%;
+}
+.Marquee {
+    font-family: 'Marquee';
+    font-size: 160%;
+}
+.Mayfair {
+    font-family: 'Mayfair';
+    font-size: 180%;
+}
+.NeonGlow {
+    font-family: 'NeonGlow';
+    font-size: 160%;
+}
+.NeonLite {
+    font-family: 'NeonLite';
+    font-size: 150%;
+}
+.Neontrace {
+    font-family: 'Neontrace';
+    font-size: 130%;
+}
+.Nevada {
+    font-family: 'Nevada';
+    font-size: 230%;
+}
+.SciFi {
+    font-family: 'SciFi';
+    font-size: 150%;
+}

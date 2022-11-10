@@ -1,0 +1,59 @@
+.slide {
+    position: relative;
+    background-image: url('../public/img/slide.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+    background-position: top right;
+    width: 100%;
+    min-height: 500px;
+    opacity: 0.9;
+
+    &__data {
+        display: grid;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        min-width: 400px;
+        text-align: center;
+        row-gap: 1.5rem;
+        cursor: default;
+    }
+
+    &__title {
+        font-family: 'Hamilton';
+        font-size: 340%;
+        color: var(--first-color-lighten);
+        animation: neonAnimation 1s alternate-reverse infinite;
+    }
+
+    &__desc {
+        color: var(--text-color-light);
+    }
+
+    &__btn {
+        margin: 0 auto;
+    }
+
+    @keyframes neonAnimation {
+        from {
+            text-shadow: white 0 0 2px,
+            white 0 0 4px,
+            #6bb3e4 0 0 8px,
+            #6bb3e4 0 0 12px,
+            #6bb3e4 0 0 16px,
+            #6bb3e4 0 0 22px,
+            #6bb3e4 0 0 30px;
+        }
+        to {
+            text-shadow: white 0 0 2px,
+            white 0 0 4px,
+            #44a4e4 0 0 8px,
+            #44a4e4 0 0 12px,
+            #44a4e4 0 0 16px,
+            #44a4e4 0 0 22px,
+            #44a4e4 0 0 30px;
+        }
+    }
+}

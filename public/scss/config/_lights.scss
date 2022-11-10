@@ -1,0 +1,177 @@
+.ts-w {
+    text-shadow: rgb(255 255 255) 0px 0px 2px, 
+    rgb(255 255 255) 0px 0px 4px, 
+    rgb(225 227 230) 0px 0px 8px, 
+    rgb(225 227 230) 0px 0px 12px, 
+    rgb(225 227 230) 0px 0px 16px, 
+    rgb(225 227 230) 0px 0px 22px, 
+    rgb(225 227 230) 0px 0px 30px !important;
+    color: #fff !important;
+    transition: .4s;
+}
+
+.ts-g {
+    text-shadow: rgb(255 255 255) 0px 0px 2px, 
+    rgb(255 255 255) 0px 0px 4px, 
+    rgb(11 215 72) 0px 0px 8px, 
+    rgb(11 215 72) 0px 0px 12px, 
+    rgb(11 215 72) 0px 0px 16px, 
+    rgb(11 215 72) 0px 0px 22px, 
+    rgb(11 215 72) 0px 0px 30px !important;
+    color: #fff !important;
+    transition: .4s;
+}
+
+.ts-red {
+    text-shadow: rgb(255 255 255) 0px 0px 2px, 
+    rgb(255 255 255) 0px 0px 4px, 
+    rgb(255 42 77) 0px 0px 8px, 
+    rgb(255 42 77) 0px 0px 12px, 
+    rgb(255 42 77) 0px 0px 16px, 
+    rgb(255 42 77) 0px 0px 22px, 
+    rgb(255 42 77) 0px 0px 30px !important;
+    color: #fff !important;
+    transition: .4s;
+}
+
+.ts-blue {
+    text-shadow: rgb(255 255 255) 0px 0px 2px, 
+    rgb(255 255 255) 0px 0px 4px, 
+    rgb(2 116 252) 0px 0px 8px, 
+    rgb(2 116 252) 0px 0px 12px, 
+    rgb(2 116 252) 0px 0px 16px, 
+    rgb(2 116 252) 0px 0px 22px, 
+    rgb(2 116 252) 0px 0px 30px !important;
+    color: #fff !important;
+    transition: .4s;
+}
+
+.ts-yellow {
+    text-shadow: rgb(255 255 255) 0px 0px 2px, 
+    rgb(255 255 255) 0px 0px 4px, 
+    rgb(255 249 124) 0px 0px 8px, 
+    rgb(255 249 124) 0px 0px 12px, 
+    rgb(255 249 124) 0px 0px 16px, 
+    rgb(255 249 124) 0px 0px 22px, 
+    rgb(255 249 124) 0px 0px 30px !important;
+    color: #fff !important;
+    transition: .4s;
+}
+
+.ts-pink {
+    text-shadow: rgb(255 255 255) 0px 0px 2px, 
+    rgb(255 255 255) 0px 0px 4px, 
+    rgb(255 92 232) 0px 0px 8px, 
+    rgb(255 92 232) 0px 0px 12px, 
+    rgb(255 92 232) 0px 0px 16px, 
+    rgb(255 92 232) 0px 0px 22px, 
+    rgb(255 92 232) 0px 0px 30px !important;
+    color: #fff !important;
+    transition: .4s;
+}
+
+
+.light {
+    &.active > .white,
+    &:hover > .white {
+        text-shadow: rgb(255 255 255) 0px 0px 2px, 
+        rgb(255 255 255) 0px 0px 4px, 
+        rgb(225 227 230) 0px 0px 8px, 
+        rgb(225 227 230) 0px 0px 12px, 
+        rgb(225 227 230) 0px 0px 16px, 
+        rgb(225 227 230) 0px 0px 22px, 
+        rgb(225 227 230) 0px 0px 30px !important;
+        color: #fff !important;
+        transition: .4s;
+    }
+
+    &.active > .green,
+    &:hover > .green {
+        text-shadow: rgb(255 255 255) 0px 0px 2px, 
+        rgb(255 255 255) 0px 0px 4px, 
+        rgb(11 215 72) 0px 0px 8px, 
+        rgb(11 215 72) 0px 0px 12px, 
+        rgb(11 215 72) 0px 0px 16px, 
+        rgb(11 215 72) 0px 0px 22px, 
+        rgb(11 215 72) 0px 0px 30px !important;
+        color: #fff !important;
+        transition: .4s;
+    }
+
+    
+    &.active > .red,
+    &:hover > .red {
+        text-shadow: rgb(255 255 255) 0px 0px 2px, 
+        rgb(255 255 255) 0px 0px 4px, 
+        rgb(255 42 77) 0px 0px 8px, 
+        rgb(255 42 77) 0px 0px 12px, 
+        rgb(255 42 77) 0px 0px 16px, 
+        rgb(255 42 77) 0px 0px 22px, 
+        rgb(255 42 77) 0px 0px 30px !important;
+        color: #fff !important;
+        transition: .4s;
+    }
+
+    &.active > .blue,
+    &:hover > .blue {
+        text-shadow: rgb(255 255 255) 0px 0px 2px, 
+        rgb(255 255 255) 0px 0px 4px, 
+        rgb(2 116 252) 0px 0px 8px, 
+        rgb(2 116 252) 0px 0px 12px, 
+        rgb(2 116 252) 0px 0px 16px, 
+        rgb(2 116 252) 0px 0px 22px, 
+        rgb(2 116 252) 0px 0px 30px !important;
+        color: #fff !important;
+        transition: .4s;
+    }
+
+    &.active > .yellow,
+    &:hover > .yellow {
+        text-shadow: rgb(255 255 255) 0px 0px 2px, 
+        rgb(255 255 255) 0px 0px 4px, 
+        rgb(255 249 124) 0px 0px 8px, 
+        rgb(255 249 124) 0px 0px 12px, 
+        rgb(255 249 124) 0px 0px 16px, 
+        rgb(255 249 124) 0px 0px 22px, 
+        rgb(255 249 124) 0px 0px 30px !important;
+        color: #fff !important;
+        transition: .4s;
+    }
+
+    &.active > .pink,
+    &:hover > .pink {
+        text-shadow: rgb(255 255 255) 0px 0px 2px, 
+        rgb(255 255 255) 0px 0px 4px, 
+        rgb(255 92 232) 0px 0px 8px, 
+        rgb(255 92 232) 0px 0px 12px, 
+        rgb(255 92 232) 0px 0px 16px, 
+        rgb(255 92 232) 0px 0px 22px, 
+        rgb(255 92 232) 0px 0px 30px !important;
+        color: #fff !important;
+        transition: .4s;
+    }
+}
+.white {
+    color: white;
+    text-shadow: 2px 2px 6px rgb(158, 158, 158);
+}
+.green {
+    color: rgb(111, 255, 75);
+    text-shadow: 2px 2px 6px rgb(158, 158, 158);
+}
+.red {
+    color: red;
+    text-shadow: 2px 2px 6px rgb(158, 158, 158);
+}
+.blue {
+    color: blue;
+    text-shadow: 2px 2px 6px rgb(158, 158, 158);
+}
+.yellow {
+    color: rgb(255, 255, 101);
+    text-shadow: 2px 2px 6px rgb(158, 158, 158);
+}
+.pink {
+    color: rgb(255, 109, 211);
+    text-shadow: 2px 2px 6px rgb(158, 158, 158);
+}

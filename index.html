@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./public/css/styles.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+</head>
+<body>
+    <header id="header" class="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">
+                <i class="fas fa-bolt nav__logo-icon"></i> Company Neon
+            </a>
+
+            <div id="nav__menu" class="nav__menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">Home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">Home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">Home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">Home</a>
+                    </li>
+                </ul>
+
+                <div id="nav-close" class="nav__close">
+                    <i class="fas fa-times"></i>
+                </div>
+            </div>
+
+            <div class="nav__btns">
+                <a href="tel:+420607808888" class="nav__tel">
+                    <i class="fas fa-phone"></i> +123123123231
+                </a>
+    
+                <div id="nav-toggle" class="nav__toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="slide">
+        <div class="slide__container container grid">
+            <div class="slide__data">
+                <h2 class="slide__title">Create your neon sign</h2>
+                <p class="slide__desc">this is description for neon sign</p>
+                <button class="btn btn-primary btn-hover slide__btn">Let's go!</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="sign section container" id="sign">
+        <h2 class="section__title-center">Create Neon</h2>
+
+        <div class="sign__container">
+            <div class="sign__tabs">
+                <div class="sign__tab">
+                    <div class="sign__tab-item active">
+                        <i class="sign__tab-icon far fa-edit"></i> Text
+                    </div>
+                    <div class="sign__tab-item">
+                        <i class="sign__tab-icon fas fa-font"></i> Font
+                    </div>
+                    <div class="sign__tab-item">
+                        <i class="sign__tab-icon far fa-lightbulb"></i> Light
+                    </div>
+
+                    <div class="sign__line"></div>
+                </div>
+
+                <div class="sign__content">
+                    <div class="sign__content-pane active">
+                        <textarea class="sign__content-area" id="text-area" placeholder="write here" rows="4"></textarea>
+                    </div>
+
+                    <div class="sign__content-pane">
+                        <div class="sign__content-fonts">
+
+                            <button class="alexa font" 
+                                onclick="fontActive(this, 'Alexa')">Alexa
+                            </button> 
+
+                            <button class="hamilton font" 
+                                onclick="fontActive(this, 'Hamilton')">Hamilton
+                            </button>
+
+                            <button class="Bayview font" 
+                                onclick="fontActive(this, 'Bayview')">Bayview
+                            </button>
+
+                            <button class="Amsterdam font" 
+                                onclick="fontActive(this, 'Amsterdam')">Amsterdam
+                            </button>
+
+                            <button class="Greenworld font" 
+                                onclick="fontActive(this, 'Greenworld')">Greenworld
+                            </button>
+
+                            <button class="NewCursive font" 
+                                onclick="fontActive(this, 'NewCursive')">NewCursive
+                            </button>
+
+                            <button class="Barcelona font" 
+                                onclick="fontActive(this, 'Barcelona')">Barcelona
+                            </button>
+
+                            <button class="Vintage font" 
+                                onclick="fontActive(this, 'Vintage')">Vintage
+                            </button>
+
+                            <button class="Amanda font" 
+                                onclick="fontActive(this, 'Amanda')">Amanda
+                            </button>
+
+                            <button class="Freespirit font" 
+                                onclick="fontActive(this, 'Freespirit')">Freespirit
+                            </button>
+
+                            <button class="Chelsea font" 
+                                onclick="fontActive(this, 'Chelsea')">Chelsea
+                            </button>
+
+                            <button class="Signature font" 
+                                onclick="fontActive(this, 'Signature')">Signature
+                            </button>
+
+                            <button class="Austin font" 
+                                onclick="fontActive(this, 'Austin')">Austin
+                            </button>
+
+                            <button class="NeonScript font" 
+                                onclick="fontActive(this, 'NeonScript')">NeonScript
+                            </button>
+
+                            <button class="Freehand font" 
+                                onclick="fontActive(this, 'Freehand')">Freehand
+                            </button>
+
+                            <button class="LoveNote font" 
+                                onclick="fontActive(this, 'LoveNote')">LoveNote
+                            </button>
+
+                            <button class="Northshore font" 
+                                onclick="fontActive(this, 'Northshore')">Northshore
+                            </button>
+
+                            <button class="Beachfront font" 
+                                onclick="fontActive(this, 'Beachfront')">Beachfront
+                            </button>
+
+                            <button class="Royalty font" 
+                                onclick="fontActive(this, 'Royalty')">Royalty
+                            </button>
+
+                            <button class="Rocket font" 
+                                onclick="fontActive(this, 'Rocket')">Rocket
+                            </button>
+
+                            <button class="WildScript font" 
+                                onclick="fontActive(this, 'WildScript')">WildScript
+                            </button>
+
+                            <button class="Avante font" 
+                                onclick="fontActive(this, 'Avante')">Avante
+                            </button>
+
+                            <button class="Monaco font" 
+                                onclick="fontActive(this, 'Monaco')">Monaco
+                            </button>
+
+                            <button class="Waikiki font" 
+                                onclick="fontActive(this, 'Waikiki')">Waikiki
+                            </button>
+
+                            <button class="ClassicType font" 
+                                onclick="fontActive(this, 'ClassicType')">ClassicType
+                            </button>
+
+                            <button class="Typewriter font" 
+                                onclick="fontActive(this, 'Typewriter')">Typewriter
+                            </button>
+
+                            <button class="Buttercup font" 
+                                onclick="fontActive(this, 'Buttercup')">Buttercup
+                            </button>
+
+                            <button class="Melbourne font" 
+                                onclick="fontActive(this, 'Melbourne')">Melbourne
+                            </button>
+
+                            <button class="NeoTokyo font" 
+                                onclick="fontActive(this, 'NeoTokyo')">NeoTokyo
+                            </button>
+
+                            <button class="LoveNeon font" 
+                                onclick="fontActive(this, 'LoveNeon')">LoveNeon
+                            </button>
+
+                            <button class="Marquee font" 
+                                onclick="fontActive(this, 'Marquee')">Marquee
+                            </button>
+
+                            <button class="Mayfair font" 
+                                onclick="fontActive(this, 'Mayfair')">Mayfair
+                            </button>
+
+                            <button class="NeonGlow font" 
+                                onclick="fontActive(this, 'NeonGlow')">NeonGlow
+                            </button>
+
+                            <button class="NeonLite font" 
+                                onclick="fontActive(this, 'NeonLite')">NeonLite
+                            </button>
+
+                            <button class="Neontrace font" 
+                                onclick="fontActive(this, 'Neontrace')">Neontrace
+                            </button>
+
+                            <button class="Nevada font" 
+                                onclick="fontActive(this, 'Nevada')">Nevada
+                            </button>
+
+                            <button class="SciFi font" 
+                                onclick="fontActive(this, 'SciFi')">SciFi
+                            </button>
+
+                        </div>
+                    </div>
+
+                    <div class="sign__content-pane">
+                        <div class="sign__content-lights">
+
+                            <div class="light" onclick="colorActive(this, 'ts-w')">
+                                <i class="sign__content-lightbulb far fa-lightbulb white"></i><br>
+                                <span>White</span>
+                            </div>
+
+                            <div class="light" onclick="colorActive(this, 'ts-g')">
+                                <i class="sign__content-lightbulb far fa-lightbulb green"></i><br>
+                                <span>Green</span>
+                            </div>
+
+                            <div class="light" onclick="colorActive(this, 'ts-red')">
+                                <i class="sign__content-lightbulb far fa-lightbulb red"></i><br>
+                                <span>Red</span>
+                            </div>
+
+                            <div class="light" onclick="colorActive(this, 'ts-blue')">
+                                <i class="sign__content-lightbulb far fa-lightbulb blue"></i><br>
+                                <span>Blue</span>
+                            </div>
+
+                            <div class="light" onclick="colorActive(this, 'ts-yellow')">
+                                <i class="sign__content-lightbulb far fa-lightbulb yellow"></i><br>
+                                <span>Yellow</span>
+                            </div>
+
+                            <div class="light" onclick="colorActive(this, 'ts-pink')">
+                                <i class="sign__content-lightbulb far fa-lightbulb pink"></i><br>
+                                <span>Pink</span>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sign__output">
+                <div class="swiper slideSwipe">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img class="swiper-img" src="../public/img/swipe/img1.jpeg" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="swiper-img" src="../public/img/swipe/img2.jpeg" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="swiper-img" src="../public/img/swipe/img3.jpeg" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="swiper-img" src="../public/img/swipe/img4.jpeg" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="swiper-img" src="../public/img/swipe/img5.jpeg" alt="">
+                        </div>
+                    </div>
+
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+
+                <p id="sign-box">Your Sign</p>
+
+                <input class="sign__output-range" id="sign-range" value="32" min="18" max="100" name="none" step="1" type="range">
+            </div>
+        </div>
+    </section>
+
+    <section class="contact section container" id="contact">
+        <h2 class="section__title-center">Contact</h2>
+
+        <div class="contact__container grid">
+            <div class="contact__data">
+                <div class="contact__info">
+                    <h3 class="contact__title">Contact Information</h3>
+
+                    <a href="" class="contact__link">
+                        <i class="fas fa-phone contact__icon"></i>
+                        +0000 00 00 00
+                    </a>
+                </div>
+
+                <div class="contact__info">
+                    <h3 class="contact__title">Contact Information</h3>
+
+                    <a href="" class="contact__link">
+                        <i class="fas fa-envelope contact__icon"></i>
+                        email@domain.com
+                    </a>
+                </div>
+            </div>
+
+            <form action="#" class="contact__form" id="contact-form" >
+                <div class="contact__form-group">
+                    <input id="fullname" class="contact__form-control" type="text" name="fullname">
+                    <label for="fullname" class="contact__form-label">Full Name</label>
+                </div>
+
+                <div class="contact__form-group">
+                    <input id="email" class="contact__form-control" type="email" rules="required|email" name="email">
+                    <label for="email" class="contact__form-label">Email</label>
+                </div>
+
+                <div class="contact__form-group contact__form-area">
+                    <textarea name="message" id="sign-link" class="contact__form-control"></textarea>
+                    <label for="message" class="contact__form-label">Message</label>
+                </div>
+
+                <button class="contact__form-submit btn btn-secondary btn-flex">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer section">
+        <div class="footer__container container grid">
+            <div class="footer__content">
+                <a href="#" class="footer__logo">
+                    <i class="fas fa-bolt footer__logo-icon"></i> Company
+                </a>
+            </div>
+
+            <div class="footer__content">
+                <h3 class="footer__title">Title</h3>
+
+                <ul class="footer__data">
+                    <li class="footer__information">opening hours</li>
+                </ul>
+            </div>
+
+            <div class="footer__content">
+                <h3 class="footer__title">Title</h3>
+    
+                <ul class="footer__data">
+                    <li class="footer__information">Adress</li>
+                    <li class="footer__information">Adress</li>
+                </ul>
+
+                <div class="footer__map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!4v1644424948349!6m8!1m7!1shqIrOniopzd2z_oLDiFfJg!2m2!1d50.00211659258461!2d14.47218009066848!3f215.73!4f0!5f0.7820865974627469" width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+
+        <p class="footer__copyright">© QNG. All rights reserved</p>
+    </footer>
+
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="fas fa-chevron-up scrollup__icon"></i>
+    </a>
+
+    <script src="public/js/app.js"></script>
+</body>
+</html>

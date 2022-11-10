@@ -1,0 +1,89 @@
+.contact {
+    &__container {
+        row-gap: 2.5rem;
+        padding-top: 1rem;
+    }
+
+    &__data {
+        display: grid;
+        row-gap: 2rem;
+    }
+
+    &__title {
+        font-size: var(--normal-font-size);
+        font-weight: var(--font-medium);
+        color: var(--text-color);
+        margin-bottom: var(--mb-0-5);
+    }
+
+    &__link {
+        display: inline-block;
+        align-items: center;
+        column-gap: .5rem;
+        color: var(--title-color);
+        font-weight: var(--font-medium);
+    }
+
+    &__icon {
+        font-size: 1.25rem;
+    }
+
+    &__form {
+        display: grid;
+        row-gap: 2rem;
+        margin-bottom: var(--mb-2-5);
+
+        &-group {
+            position: relative;
+            height: 3rem;
+            border-bottom: 1px solid var(--text-color-light);
+
+            textarea {
+                resize: none;
+            }
+        }
+
+        &-control {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            padding: 1rem 1rem 1rem 0;
+            background-color: none;
+            color: var(--text-color);
+            outline: none;
+            border: none;
+            z-index: 1;
+
+            &:focus + .contact__form-label {
+                top: -0.75rem;
+                left: 0;
+                font-size: var(--small-font-size);
+                z-index: 10;
+            }
+            
+            &:not(:placeholder-shown):not(:focus) + .contact__form-label {
+                top: -0.75rem;
+
+                font-size: var(--small-font-size);
+                z-index: 10;
+            }
+        }
+
+        &-label {
+            position: absolute;
+            top: .75rem;
+            left: 0;
+            width: 100%;
+            font-size: var(--small-font-size);
+            color:var(--text-color-light);
+            transition: .3s;
+        }
+
+        &-area {
+           height: 4rem;
+           resize: none;
+        }
+    }
+}
