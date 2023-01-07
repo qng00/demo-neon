@@ -2,6 +2,30 @@ const $ = document.querySelector.bind(document);
 const $$ = document.querySelectorAll.bind(document);
 
 
+const saveLinkInput = $('.save-link__input');
+const saveToMsg = $('#msg');
+function ChangeSaveLink(attrName, attrValue) {
+    const currentURL = new URL(saveLinkInput.value);
+
+    currentURL.searchParams.set(attrName, attrValue);
+    
+    saveLinkInput.value = currentURL;
+    saveToMsg.value = currentURL;
+}
+
+saveLinkInput.value = window.location.href + '#neon';
+saveToMsg.value = window.location.href + '#neon';
+
+saveLinkInput.addEventListener('click', () => {
+    const copyShow = $('.save-copied');
+    saveLinkInput.select();
+    document.execCommand('copy');
+    copyShow.style.opacity = 1;
+    setTimeout(() => {
+        copyShow.style.opacity = 0;
+    }, 1500);
+});
+
 // Navbar
 const navMenu = $('#nav__menu');
 const navToggle = $('#nav-toggle');
@@ -34,7 +58,7 @@ navLink.forEach(e => e.addEventListener('click', linkAction))
 // change bacground header
 function scrollHeader() {
     const header = $('#header')
-    if(this.scrollY < 50) {
+    if(this.scrollY < 40) {
         header.classList.add('scroll-header')
     } else {
         header.classList.remove('scroll-header')
@@ -92,7 +116,6 @@ function draggable(el) {
                             // this - is signShow (and (el) )
         let offsetY = e.clientY - parseInt(window.getComputedStyle(this).top)
 
-        console.log(offsetX);
         function mouseMoveHandler(e) {
             el.style.top = (e.clientY - offsetY) + 'px'
             el.style.left = (e.clientX - offsetX) + 'px'
@@ -132,6 +155,8 @@ function draggable(el) {
 scope.addEventListener('input', function() {
     const size = scope.value
     signShow.style.fontSize = size + 'px'
+
+    ChangeSaveLink('size', size);
 })
 
 
@@ -145,7 +170,8 @@ textArea.oninput = function(e) {
     } else {
         signShow.innerText = 'Your Sign'
     }
-
+    
+    ChangeSaveLink('text', showedSign);
 }
 
 
@@ -158,11 +184,13 @@ function fontActive(e, fontFamily) {
     e.classList.add('active')
 
     signShow.style.fontFamily = fontFamily
+
+    ChangeSaveLink('font', fontFamily);
 }
 
 // Color active and change style color in sign show
+const allColors = $$('.light')
 function colorActive(e, colorShadow) {
-    const allColors = $$('.light')
 
     for(let color of allColors) {
         color.classList.remove('active')
@@ -175,8 +203,81 @@ function colorActive(e, colorShadow) {
             signShow.classList.remove(signShow.classList[i])
         }
     }
-    signShow.classList.add(colorShadow)
+    signShow.classList.add(colorShadow);
+
+    ChangeSaveLink('color', colorShadow);
 }
+
+function validFont(font) {
+    const allPossibleFont = [];
+    const fonts = document.getElementsByClassName('font');
+    for(let i = 0; i < fonts.length; i++) {
+        const attrValue = fonts[i].getAttribute('onclick');
+        const regex = /('[a-zA-Z]+)/g;
+        const className = attrValue.match(regex).join('');
+        allPossibleFont.push(className.slice(1));
+    }
+    return allPossibleFont.includes(font);
+}
+
+function validColor(light) {
+    const allPossibleClasses = [];
+    const lights = document.getElementsByClassName('light');
+    for (let i = 0; i < lights.length; i++) {
+        const attrValue = lights[i].getAttribute('onclick');
+        const regex = /(ts[a-z\-1-9]+)/g;
+        const className = attrValue.match(regex).join('');
+        allPossibleClasses.push(className);
+    }
+
+    return allPossibleClasses.includes(light);
+}
+
+function loadLink() {
+    const currentURL = new URL(window.location.href);
+
+    const text = currentURL.searchParams.get('text');
+    if(text) {
+        signShow.innerHTML = text;
+    }
+
+    const font = currentURL.searchParams.get('font');
+    if(font && validFont(font)) {
+        signShow.style.fontFamily = font;
+    }
+
+    const color = currentURL.searchParams.get('color');
+    if(color && validColor(color)) {
+        signShow.classList.add(color);
+    }
+}
+loadLink();
+
+
+const form = $('#contact-form');
+
+function sendMsg(e) {
+    e.preventDefault();
+        const fullName = $('#full-name'),
+        email = $('#email'),
+        msg = $('#msg');
+    
+    Email.send({
+        SecureToken : "eb13f429-6a01-4a19-bd0d-87e0d3eac82f",
+        To : 'zquy00@gmail.com',
+        From : 'phamhieu07052007@gmail.com',
+        Subject : `Od: ${email.value}`,
+        Body : `vás email: ${email.value}
+                Tel: ${fullName.value}        
+                Link:${msg.value}`
+    }).then(
+      message => alert(message)
+    );
+}
+
+form.addEventListener('submit', sendMsg);
+
+
 
 // scroll up
 function scrollUp() {

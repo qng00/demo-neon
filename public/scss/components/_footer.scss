@@ -1,4 +1,6 @@
 .footer {
+    background-color: rgb(231, 231, 231);
+
     &__container {
         margin-top: 3rem;
         row-gap: 3rem;
@@ -36,6 +38,7 @@
 
     &__information {
         font-size: var(--small-font-size);
+        color: var(--text-color);
     }
 
     &__copyright {

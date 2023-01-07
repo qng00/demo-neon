@@ -13,12 +13,14 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
 
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+
 </head>
 <body>
     <header id="header" class="header">
         <nav class="nav container">
             <a href="#" class="nav__logo">
-                <i class="fas fa-bolt nav__logo-icon"></i> Company Neon
+                <i class="fas fa-bolt nav__logo-icon"></i> Huu Tranh Neon
             </a>
 
             <div id="nav__menu" class="nav__menu">
@@ -27,14 +29,14 @@
                         <a href="#" class="nav__link">Home</a>
                     </li>
                     <li class="nav__item">
+                        <a href="#neon" class="nav__link">Vytvořit Neon</a>
+                    </li>
+                    <!-- <li class="nav__item">
                         <a href="#" class="nav__link">Home</a>
                     </li>
                     <li class="nav__item">
                         <a href="#" class="nav__link">Home</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="#" class="nav__link">Home</a>
-                    </li>
+                    </li> -->
                 </ul>
 
                 <div id="nav-close" class="nav__close">
@@ -44,7 +46,7 @@
 
             <div class="nav__btns">
                 <a href="#" class="nav__tel">
-                    <i class="fas fa-phone"></i> +123123123231
+                    <i class="fas fa-phone"></i> +420 607 808 888
                 </a>
     
                 <div id="nav-toggle" class="nav__toggle">
@@ -58,14 +60,14 @@
         <div class="slide__container container grid">
             <div class="slide__data">
                 <h2 class="slide__title">Create your neon sign</h2>
-                <p class="slide__desc">this is description for neon sign</p>
+                <p class="slide__desc">LED neon lze tvarovat v obrázce, loga, písma a další motivy</p>
                 <button class="btn btn-primary btn-hover slide__btn">Let's go!</button>
             </div>
         </div>
     </section>
 
-    <section class="sign section container" id="sign">
-        <h2 class="section__title-center">Create Neon</h2>
+    <section class="sign section container" id="neon">
+        <h2 class="section__title-center">VYTVOŘTE SI SVŮJ VLASTNÍ NEON</h2>
 
         <div class="sign__container">
             <div class="sign__tabs">
@@ -85,7 +87,7 @@
 
                 <div class="sign__content">
                     <div class="sign__content-pane active">
-                        <textarea class="sign__content-area" id="text-area" placeholder="write here" rows="4"></textarea>
+                        <textarea class="sign__content-area" id="text-area" placeholder="Napište sem" rows="4"></textarea>
                     </div>
 
                     <div class="sign__content-pane">
@@ -247,32 +249,32 @@
 
                             <div class="light" onclick="colorActive(this, 'ts-w')">
                                 <i class="sign__content-lightbulb far fa-lightbulb white"></i><br>
-                                <span>White</span>
+                                <span>Bílá</span>
                             </div>
 
                             <div class="light" onclick="colorActive(this, 'ts-g')">
                                 <i class="sign__content-lightbulb far fa-lightbulb green"></i><br>
-                                <span>Green</span>
+                                <span>Zelená</span>
                             </div>
 
                             <div class="light" onclick="colorActive(this, 'ts-red')">
                                 <i class="sign__content-lightbulb far fa-lightbulb red"></i><br>
-                                <span>Red</span>
+                                <span>červená</span>
                             </div>
 
                             <div class="light" onclick="colorActive(this, 'ts-blue')">
                                 <i class="sign__content-lightbulb far fa-lightbulb blue"></i><br>
-                                <span>Blue</span>
+                                <span>Modrá</span>
                             </div>
 
                             <div class="light" onclick="colorActive(this, 'ts-yellow')">
                                 <i class="sign__content-lightbulb far fa-lightbulb yellow"></i><br>
-                                <span>Yellow</span>
+                                <span>Žlutá</span>
                             </div>
 
                             <div class="light" onclick="colorActive(this, 'ts-pink')">
                                 <i class="sign__content-lightbulb far fa-lightbulb pink"></i><br>
-                                <span>Pink</span>
+                                <span>Růžová</span>
                             </div>
 
                         </div>
@@ -307,12 +309,69 @@
                 <p id="sign-box">Your Sign</p>
 
                 <input class="sign__output-range" id="sign-range" value="32" min="18" max="100" name="none" step="1" type="range">
+
             </div>
         </div>
+
+        <div id="save-link">
+            <input class="save-link__input" type="text" readonly>
+            <div class="save-copied"><span>Copied</span></div>
+        </div>
+
     </section>
 
+    <div class="my-imagination">
+        <section class="imagination section container">
+            <h2 class="imagination-title section__title-center">Moje představivost</h2>
+            <p class="imagination-desc section__desc-center">Vytvořte si svůj vlastní unikátní neon s naším online nástrojem pro návrh</p>
+    
+            <div class="imagination__container grid">
+                <div class="imagination__content">
+                    <h3 class="imagination__title">Design neonových nápisu</h3>
+
+                    <p class="imagination__text">
+                        Pokud nemůžete najít písmo, které se vám líbí, nebojte se, 
+                        dokážeme replikovat téměř jakýkoli styl písma, včetně rukopisu, obrázků a log.
+                    </p>
+
+                    <p class="imagination__text">
+                        Pokud si nejste schopni navrhnout svůj ideální neon na míru pomocí našeho online tvůrce neonových nápisů, 
+                        kontaktujte nás pro vlastní cenovou nabídku, včetně vašich představ, požadavků a rozpočtu. Rádi vidíme, 
+                        že naše neonové světelné nápisy ožívají, takže znalost vašeho rozpočtu nám umožní přizpůsobit naši nabídku tak, 
+                        aby co nejlépe vyhovovala vašim požadavkům.
+                    </p>
+                </div>
+
+                <div class="imagination__content">
+                    <h3 class="imagination__title">Vytvořte neonových nápisů online</h3>
+
+                    <p class="imagination__text">
+                        Vytvořte si vlastní neonové světlo pomocí našeho online tvůrce neonových nápisů. 
+                        Chcete-li si navrhnout vlastní neonové světlo, vyberte písmo, barvu a velikost. Vyzkoušejte tolik kombinací, 
+                        kolik chcete. Svůj návrh si můžete dokonce prohlédnout na několika pozadích, abyste měli opravdu dobrou představu o tom, jak bude IRL vypadat. 
+                        Když jste s vlastními možnostmi spokojeni, přidejte je do košíku. Během několika týdnů budete mít ručně vyrobený, 
+                        personalizovaný design neonové světla. Pokud nemůžete dělat to, co chcete s nástrojem pro vlastní podepisování, 
+                        požádejte nás o vlastní cenovou nabídku.
+                    </p>
+                </div>
+
+                <div class="imagination__content">
+                    <h3 class="imagination__title">Chcete obrázek nebo logo?</h3>
+
+                    <p class="imagination__text">
+                        To umíme taky! Dokážeme vytvořit prakticky cokoli, co potřebujete. 
+                        Kliknutím sem přejdete na formulář, který vám umožní nahrát obrázek s vaším logem, 
+                        názvem společnosti, sloganem nebo jakýmkoli uměleckým dílem, 
+                        které byste chtěli proměnit ve stylové zářící znamení.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </div>
+
     <section class="contact section container" id="contact">
-        <h2 class="section__title-center">Contact</h2>
+        <div class="backtrack"></div>
+        <h2 class="section__title-center">Kontakt</h2>
 
         <div class="contact__container grid">
             <div class="contact__data">
@@ -321,7 +380,7 @@
 
                     <a href="" class="contact__link">
                         <i class="fas fa-phone contact__icon"></i>
-                        +0000 00 00 00
+                        +420 607 808 888
                     </a>
                 </div>
 
@@ -330,28 +389,28 @@
 
                     <a href="" class="contact__link">
                         <i class="fas fa-envelope contact__icon"></i>
-                        email@domain.com
+                        huutranh@seznam.cz
                     </a>
                 </div>
             </div>
 
             <form action="#" class="contact__form" id="contact-form" >
                 <div class="contact__form-group">
-                    <input id="fullname" class="contact__form-control" type="text" name="fullname">
-                    <label for="fullname" class="contact__form-label">Full Name</label>
+                    <input id="full-name" class="contact__form-control" type="tel" name="full-name">
+                    <label for="full-name" class="contact__form-label">Telefonní číslo</label>
                 </div>
 
                 <div class="contact__form-group">
-                    <input id="email" class="contact__form-control" type="email" rules="required|email" name="email">
+                    <input id="email" class="contact__form-control" type="email" rules="email" name="email">
                     <label for="email" class="contact__form-label">Email</label>
                 </div>
 
                 <div class="contact__form-group contact__form-area">
-                    <textarea name="message" id="sign-link" class="contact__form-control"></textarea>
+                    <textarea id="msg" class="contact__form-control" name="message"></textarea>
                     <label for="message" class="contact__form-label">Message</label>
                 </div>
 
-                <button class="contact__form-submit btn btn-secondary btn-flex">Submit</button>
+                <button class="contact__form-submit btn btn-secondary btn-flex">Odeslat</button>
             </form>
         </div>
     </section>
@@ -360,24 +419,25 @@
         <div class="footer__container container grid">
             <div class="footer__content">
                 <a href="#" class="footer__logo">
-                    <i class="fas fa-bolt footer__logo-icon"></i> Company
+                    <i class="fas fa-bolt footer__logo-icon"></i> Huu tranh neon
                 </a>
             </div>
 
             <div class="footer__content">
-                <h3 class="footer__title">Title</h3>
+                <h3 class="footer__title">Otevřeno</h3>
 
                 <ul class="footer__data">
-                    <li class="footer__information">opening hours</li>
+                    <li class="footer__information">Po - Ne</li>
+                    <li class="footer__information">08:00 - 17:00 hodin</li>
                 </ul>
             </div>
 
             <div class="footer__content">
-                <h3 class="footer__title">Title</h3>
+                <h3 class="footer__title">Adresa</h3>
     
                 <ul class="footer__data">
-                    <li class="footer__information">Adress</li>
-                    <li class="footer__information">Adress</li>
+                    <li class="footer__information">Libušská 319/126</li>
+                    <li class="footer__information">Praha 4</li>
                 </ul>
 
                 <div class="footer__map">

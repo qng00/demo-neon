@@ -1,0 +1,37 @@
+.my-imagination {
+    background-color: #E7E7E7;
+}
+
+.imagination {
+    &-title {
+        margin-bottom: 10px !important;
+        text-transform: uppercase;
+    }
+
+    &-desc {
+        color: rgb(0, 0, 0);
+        opacity: .7;
+        font-size: var(--small-font-size);
+    }
+
+    &__container {
+        margin-top: var(--mb-2-5);
+        margin-bottom: var(--mb-2-5);
+        row-gap: 2rem;
+    }
+
+    &__content {
+        display: inherit;
+        row-gap: .6rem;
+        text-align: justify;
+    }
+
+    &__title {
+        font-size: var(--h3-font-size);
+    }
+
+    &__text {
+        font-size: var(--small-font-size);
+        color: rgb(60, 60, 60);
+    }
+}

@@ -152,6 +152,12 @@
         }
     }
 
+    .imagination {
+        &-desc {
+            font-size: var(--normal-font-size);
+        }
+    }
+
     .footer {
         &__container {
             grid-template-columns: repeat(3, 3fr);
@@ -159,7 +165,7 @@
     }
 }
 
-@media screen and (min-width: 820px) {
+@media screen and (min-width: 968px) {
     .container {
         margin-left: auto;
         margin-right: auto;
@@ -176,13 +182,54 @@
 
     .sign {
         &__tabs {
-            width: 70%;
+            width: 50%;
+        }
+
+        &__tab {
+            &-item,
+            &-icon {
+                font-size: 20px;
+            }
+        }
+
+        &__content {
+            &-fonts {
+                grid-template-columns: repeat(3, 3fr);
+                column-gap: .6rem;
+            }
+
+            &-lights {
+                grid-template-columns: repeat(3, 2fr)
+            }
+        }
+
+        &__output {
+
+        }
+    }
+    .sign.container {
+        max-width: 1080px;
+    }
+
+    .imagination {
+        &__container {
+            grid-template-columns: repeat(3, 3fr);
+            align-items: start;
+            column-gap: 2rem;
+        }
+
+        &__title {
+            font-size: var(--normal-font-size);
         }
     }
 
     .contact {
         &__container {
             grid-template-columns: repeat(2, 2fr)
+        }
+
+        &__data {
+            row-gap: 0;
         }
     }
 

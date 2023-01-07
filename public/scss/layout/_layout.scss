@@ -5,10 +5,16 @@
         font-size: var(--h2-font-size);
         margin-bottom: var(--mb-2);
         line-height: 140%;
+        cursor: default;
         
         &-center{
             text-align: center;
         }
+    }
+
+    &__desc-center {
+        font-size: 14px;
+        text-align: center;
     }
 }
 

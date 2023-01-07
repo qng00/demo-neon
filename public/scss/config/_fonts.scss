@@ -11,7 +11,14 @@
     &.active {
         color: #C23564;
         text-shadow: #C23564 0px 0px 30px;
+        transition: .2s;
     }
+}
+
+.font:hover:not(.active) {
+    color: #4453dc;
+    text-shadow: #4453dc 0px 0px 30px;
+    transition: .2s;
 }
 
 @font-face {
